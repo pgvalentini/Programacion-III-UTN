@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Punto 6</title>
+    </head>
+    <body>
+        <h1><center>CATÁLOGO DE ARTE</center></h1><br>
+        <p><b>Ingrese los términos de búsqueda</b></p>
+        <form action="">
+            <table border="0" align="middle" cellspacing="10" cellpadding="1">
+                <colgroup>
+                    <col style="width: 25%"/>
+                    <col style="width: 25%"/>
+                    <col style="width: 25%"/>
+                    <col style="width: 25%"/>
+                </colgroup>
+                <tr>
+                    <td><b>OBRA</b></td>
+                    <td><b>TIPO</b></td>
+                    <td><b>DISPONIBILIDAD</b></td>
+                    <td><b>ESTILO</b></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="titulo">Titulo</label>
+                        <input type="text" id="titulo" name="titulo">
+                    </td>
+                    <td>
+                        <input type="checkbox" id="escultura" name="escultura">
+                        <label for="escultura">Escultura</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="disp" name="disp" value="publ">
+                        <label for="disp">Museo / Acceso Público</label>
+                    </td>
+                    <td>
+                        <select name="estilo">
+                            <option value="clas">Clásico</option>
+                            <option value="abs">Abstracto</option>  
+                            <option value="surr">Surrealista</option>
+                            <option value="otro">Otro</option>                            
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="autor">Autor</label>
+                        <input type="text" id="autor" name="autor">
+                    </td>
+                    <td>
+                        <input type="checkbox" id="arquitectura" name="arquitectura">
+                        <label for="arquitectura">Arquitectura</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="disp" name="disp" value="priv">
+                        <label for="disp">Colección Privada</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="checkbox" id="pintura" name="pintura">
+                        <label for="pintura">Pintura</label>
+                </tr>
+                
+                <td>
+                    <p><b>Háganos saber sus sugerencias</b></p>
+                <td>
+                    <br><br>
+                    <textarea name="estilo" id="estilo" cols="40" rows="4" >Me gustaría indicar que...</textarea>
+                </td>
+            </table>
+            <center><button>Buscar</button></center>
+        </form>
+    </body>
+</html>
